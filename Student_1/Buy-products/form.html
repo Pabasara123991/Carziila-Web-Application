@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment.carzila</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../common.css">
+</head>
+    <body>
+        <div class="form-container">
+            <div class="oder-info">
+                <h1>Order summary</h1>
+                <div class="total-amount">
+                    <div class="total-title">Amount (USD) :</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <div class="Order-ditels">
+                    <div class="Order-title">Discription : Online Payment</div>
+                </div>
+
+            </div>
+            <div class = "from">
+                <h2>Payment details</h2>
+                <fieldset class="form-content">
+                    <form class="form-card-info">
+                        <div class="card-info">
+                            <div >
+                                <label for="card-num">Card Number</label><br>
+                                <input type="text" name="card-num" id="card-num" size="20" maxlength="16" required>
+                                <label for="month-input">Expiration</label><br>
+                                <select name="month" id="month-input" required>
+                                    <option value="" disabled> Month</option>
+                                    <option value="01" > 01</option>
+                                    <option value="02"> 02</option>
+                                    <option value="03"> 03</option>
+                                    <option value="04"> 04</option>
+                                    <option value="05"> 05</option>
+                                    <option value="06"> 06</option>
+                                    <option value="07"> 07</option>
+                                    <option value="08"> 08</option>
+                                    <option value="09"> 09</option>
+                                    <option value="10"> 10</option>
+                                    <option value="11"> 11</option>
+                                    <option value="12"> 12</option>
+                                </select>
+                                <select name="year" id="year-input" required>
+                                    <option value="">Year</option>                              
+                                    <option value="2023"> 2023</option>
+                                    <option value="2024"> 2024</option>
+                                    <option value="2025"> 2025</option>
+                                    <option value="2026"> 2026</option>
+                                    <option value="2027"> 2027</option>
+                                    <option value="2028"> 2028</option>
+                                    <option value="2029"> 2029</option>
+                                    <option value="2030"> 2030</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="card-holder">Card Holder</label>
+                                <input type="text" id="card-holder" class="card-holder" required><br>
+                                <label for="pin">PIN Number</label><br>
+                                <input type="password" name="pin" id="pin" size="4" maxlength="4" required>
+                            </div>
+                        </div>
+                        <div class="head-item">
+                            <h2>Biling Address</h2>
+                            <button type="button" id="btn" class="btn btn-default dropdown-toggle">Open
+
+                            </button>
+                        </div>
+                        <p id="Biling-Address"> Your Address</p>
+                        <div class="btn-group">
+                            <div class="dropdown-menu" id="Addrece-form">
+                                <label for="Address1">Address1</label>
+                                <input type="text" id="Address1" class="info" value="" required><br>
+                                <label for="Address2">Address2</label>
+                                <input type="text" id="Address2" class="info" value=""><br>
+                                <label for="Address3">Address3</label>
+                                <input type="text" id="Address3" class="info" value=""><br>
+                                <label for="Town-city">Town/City</label>
+                                <input type="text" id="Town-city" class="Tinfo" value="" required><br>
+                                <label for="state-region">State/Region</label>
+                                <input type="text" id="state-region" class="info" value=""><br>
+                                <label for="ZIP-code">ZIP-code</label>
+                                <input type="text" id="ZIP-code" class="info" value="" required><br>
+                                <label for="Country">Country</label>
+                                <input type="text" id="Country" class="info" value="" required><br>
+                                <div class="choise">
+                                    <button class="cenge-cancel-btn">Cancel</button>
+                                    <input type="submit" value="Conferm" id="submit-btn" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head-item">
+                            <h2>Email Address</h2>
+                            <button type="button" id="2btn"
+                                class="btn btn-default dropdown-toggle">
+                                Open 
+                            </button>
+                        </div>
+                            <div id="Email-Address">Your Email</div>
+                            <div class="Contact-info" id="email-form">                            
+                                <label for="number">Phone Number</label>
+                                <input type="text" id="number" class="phone-num" required><br>
+                                <label for="email">Enter Email</label>
+                                <input type="email" id="email" class="email" size="20" placeholder="Enter your Email" required><br>
+                                <div class="choise">
+                                    <button class="cenge-cancel">Cancel</button>
+                                    <input type="submit" value="Conferm" id="submit">
+                                </div>
+                            </div>
+                            <div class="final-choise">
+                                <button type="submit" id="final-submit-btn">Make purchase</button>
+                                <button id="final-cancel-btn">Cancel</button>
+                            </div>      
+                    </form>
+                </fieldset>
+                
+            </div>
+            <div>
+
+            </div>
+            </div>
+
+            <script src="form.js"></script>
+            <!-- footer -->
+            <footer class="footer">
+                <p>&copy; 2023 Carzilla.&nbsp;&nbsp;&nbsp;All rights reserved.</p>
+                <p> &nbsp;&nbsp;<a href="mailto:Carzilla@gmail.com">Carzilla@gmail.com</a></p>
+                <a href="../PageEditor/PageEditor.html">
+                <div class="developer-button">Student4</div></a>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url('./img/background.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container{
+    background: transparent;
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    width: 400px;
+    border: 2px rgb(255, 255, 255);
+    padding: 10px 5px 10px 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.oder-info{
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    border: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+}
+.total-amount{
+    display: flex;
+    padding-bottom: 5px;
+}
+.card-info{
+    border: 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 5px 5px 5px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#Addrece-form{
+    text-align: left;
+    display:none;
+    flex-flow: column;
+    padding: 5px 5px 5px 5px;
+
+
+}
+#email-form{
+    display: none;
+    flex-flow: column;
+    padding: 5px 5px 5px 5px;
+    display: none;
+}
+
+
+.head-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px;
+}
+
+#Biling-Address,#Email-Address{
+    display: flex;
+    justify-content: left;
+    padding: 5px 5px 5px 5px;
+    background: rgb(95, 95, 99);
+    height: 20px;
+    margin-bottom: 10px;
+}
+.choise{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px;
+
+}
+.com-info{
+    padding: 5px 5px 5px 5px;
+    background: rgb(136, 136, 136);
+    margin-bottom: 5px;
+}
+button{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#submit-btn{
+    color: rgb(0, 0, 0);
+}
+#month-input,#year-input{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.final-choise{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px;
+    border: 2px rgb(255, 255, 255);
+}

@@ -1,0 +1,87 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cac6c6; 
+    color: #424040; 
+}
+
+
+/* Banner area styles */
+.banner-area {
+    background-image: url('./Images/Intro.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner-area h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner-area p {
+    font-size: 24px;
+}
+
+/* Main content area styles */
+.intro_content_text {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.intro_content_text p {
+    margin-bottom: 20px;
+}
+
+/* Sub-topic links styles */
+.sub_topic_links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub_topic_links ul li {
+    margin-bottom: 10px;
+}
+
+.sub_topic_links a {
+    text-decoration: none;
+    color: #080000; 
+    font-size: 20px;
+}
+
+.sub_topic_links a:hover {
+    color: #0e0101; 
+}
+
+/* Future and Automotive Technology box styles */
+.FAT_Box {
+    padding: 20px;
+    margin: 50px;
+    background-color: #f8eeee; 
+    border-radius: 10px;
+}
+
+.FAT_Details h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.FAT_Details p {
+    margin-bottom: 20px;
+}
+
+.FAT_Imgs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 11px rgba(243, 239, 239, 0.8);
+    transition: transform 0.5s ease;
+}
+
+.FAT_Imgs img:hover {
+    transform: translateY(-10px);
+}

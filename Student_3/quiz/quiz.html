@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Qiuz</title>
+        <link rel="stylesheet" href="./quiz_style.css">
+        <link rel="stylesheet" href="../common.css">
+    </head>
+    <body>
+        <!-- Start of the navigation bar -->
+        <div id="navi_bar">
+            <div class="logo">
+                <a href="../../Student_2/Main_Page/Main_Page.html">
+                        <img src="../Logo.png" alt="Logo">
+                    </a>
+            </div>
+            <div class="option">
+                <div class="selected_btn active"><a href="../../Student_2/Main_Page/Main_Page.html">HOME</a></div>
+                <div class="selected_btn"><a href="../../Student_4/Gallery/Gallery.html">GALLERY</a></div>
+                <div class="selected_btn"><a href="../../Student_3/quiz/quiz.html">QUIZ</a></div>
+                <div class="selected_btn"><a href="../../Student_1/Buy-products/BuyProducts.html">SHOP</a></div>
+                <div class="selected_btn"><a href="../../Student_2/Comments_Page/Comments.html">COMMENTS</a></div>
+                <div class="selected_btn"><a href="../../Student_4/Sitemap/Sitemap.html">SITEMAP</a></div>
+                <div class="selected_btn"><a href="../../Student_3/about_us/detail.html">ABOUT US</a></div>
+            </div>
+        </div>
+        <!-- End of the navigation bar -->
+            <div>
+                <video autoplay loop muted id="backmp4">
+                    <source src="./video/quiz_car_video.mp4">
+                </video>
+            </div>
+            <button id="startQuizBtn">start quiz</button>
+            <div class="app">
+                <div id="finishdHead"></div>
+                <div class="container">
+                    <h2><span id="qNum"> questionNum</span></h2>
+                    <div id="time">
+                        <div id="countdown"></div>
+                    </div>
+                </div>
+                <div class="quiz">
+                    
+                    <h1 id="question">question;</h1>
+                    <div id="answer-buttons">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                        
+                    </div>
+                    <div id="timeToShow"></div>
+                    <div id="goodPerformance"></div>
+                    <div id="badPerformance"></div>
+                    <button id="next-btn"> Next</button>
+                </div>
+            </div>
+         <!-- footer -->
+         <footer class="footer">
+            <p>&copy; 2023 Carzilla.&nbsp;&nbsp;&nbsp;All rights reserved.</p>
+            <p> &nbsp;&nbsp;<a href="mailto:Carzilla@gmail.com">Carzilla@gmail.com</a></p>
+            <a href="../Page_Editor/PageEditor.html">
+            <div class="developer-button">Developer</div></a>
+        </footer>
+        <script src="quiz_script.js"></script>
+    </body>
+</html>

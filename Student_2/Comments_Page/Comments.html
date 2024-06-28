@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Comments</title>
+        
+            <!-- linking the css files  -->
+            
+            <link rel="stylesheet" href="./Comments.css">
+            <link rel="stylesheet" href="../student2.css">
+            <link rel="stylesheet" href="./comments.js">
+            <link rel="stylesheet" href="../common.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+    </head>
+
+    <body>
+            <!-- navigation bar -->
+    <div id="navi_bar">
+        <div class="logo">
+                <a href="../Main_Page/Main_Page.html">
+                    <img src="../Logo.png" alt="Logo">
+                </a>
+        </div>
+        <div class="navi_text">
+            <div class="selected_btn active"><a href="../../Student_2/Main_Page/Main_Page.html">HOME</a></div>
+            <div class="selected_btn"><a href="../../Student_4/Gallery/Gallery.html">GALLERY</a></div>
+            <div class="selected_btn"><a href="../../Student_3/quiz/quiz.html">QUIZ</a></div>
+            <div class="selected_btn"><a href="../../Student_1/Buy-products/BuyProducts.html">SHOP</a></div>
+            <div class="selected_btn"><a href="../../Student_2/Comments_Page/Comments.html">COMMENTS</a></div>
+            <div class="selected_btn"><a href="../../Student_4/Sitemap/Sitemap.html">SITEMAP</a></div>
+            <div class="selected_btn"><a href="../../Student_3/about_us/detail.html">ABOUT US</a></div>
+        </div>
+    </div>
+        
+        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+        
+        
+
+        
+                
+                <div id="top" class="comments_welcome_screen">
+                    <!-- welcome screen text -->
+                    <div class="comments_welcome_screen_text main_topic">
+                        <h1 class="animation_h1">Comments</h1>
+                        <h3 class="animation_h2">WE VALUE YOUR FEEDBACK ABOVE ALL...</h3>
+                    </div>
+                </div>
+                <!-- creating a container for contact us form and giving it the 'visible' class that contains 'display:grid;' attribute -->
+                <div id="comments_form_container" class="comments_form_container visible">
+                    <!-- creating form and using action to mail form input to site email upon valid submit -->
+                    <form class="comments_form" action="mailto:bhashitha0005@gmail.com" method="post" enctype="text/plain">
+                        <!-- using div tags to seperate individual form inputs -->
+                        <div class="form_input_container">
+                            <!-- creating question with input field within seperate div -->
+                            <div class="form_input content_text">
+                                <label for="username" >Please could you tell us your name?</label>
+                                <input type="text" id="username" size="45" name="Sender Name " placeholder="Enter Your Fullname Here">
+                            </div>
+                            <!-- creating div class used by java script to print error massage when input is invalid -->
+                            <div class="error_msg"></div>
+                        </div> 
+                        <!-- using before format for similar question -->
+                        <div class="form_input_container">
+                            <div class="form_input content_text">
+                                <label for="email_address">Please could you tell us your email address?</label>
+                                <input type="text" id="email_address" size="45" name="Sender Email Address " placeholder="Enter Your Email Address Here">
+                            </div>
+                            <div class="error_msg"></div>
+                        </div> 
+                        <!-- applying id to better handle different type of input -->
+                        <div id="radio_input_form" class="form_input_container content_text">
+                            <p id="rating_p">
+                                How satisfied were you with our website ? Choose from 0 to 5,
+                                where 0 is extremely dissatisfied and 5 is extremely satisfied.
+                            </p>
+                            <div class="rating_container">
+                                <!-- creating radio buttons for question -->
+                                <div class="rating">
+                                    <label for="rating_1" >1</label>
+                                    <input type="radio" class="rating_result" id="rating_1" name="satisfication level" value="1">
+                                </div>
+                                <div class="rating">
+                                    <label for="rating_2" >2</label>
+                                    <input type="radio" class="rating_result" id="rating_2" name="satisfication level" value="2">
+                                </div>
+                                <div class="rating">
+                                    <label for="rating_3" >3</label>
+                                    <input type="radio" class="rating_result" id="rating_3" name="satisfication level" value="3">
+                                </div>
+                                <div class="rating">
+                                    <label for="rating_4" >4</label>
+                                    <input type="radio" class="rating_result" id="rating_4" name="satisfication level" value="4">
+                                </div>
+                                <div class="rating">
+                                    <label for="rating_5" >5</label>
+                                    <input type="radio" class="rating_result" id="rating_5" name="satisfication level" value="5">
+                                </div>
+                                
+                            </div>
+                            <!-- div class used by javascript to display error message -->
+                            <div class="error_msg"></div>
+                        </div>
+                        <!-- using similar format to previous text input field -->
+                        <div class="form_input_container">
+                            <div class="form_input content_text">
+                                <label for="reason" >Please could you tell us your reason for giving this rating?</label>
+                                <input type="text" id="reason" size="45" name="Reason for rating" placeholder="Enter Your Reason For Given Rating">
+                            </div>
+                            <div class="error_msg"></div>
+                        </div> 
+                        <!-- giving unique id to better handle optional input -->
+                        <div class="form_input_container" id="form_input_container_optional">
+                            <!-- using form_input class for input field -->
+                            <div class="form_input content_text">
+                                <label for="task_method">What is your favorite car category? (optional)</label>
+                                <select name="Task completion method" id="task_method" size="1">
+                                    <option value="Not-selected">--Please Select--</option>
+                                    <option value="Classic cars">Classic cars</option>
+                                    <option value="Hybrid cars">Hybrid cars</option>
+                                    <option value="Electric vehicles">Electric vehicles</option>
+                                    <option value="Racing cars">Racing cars</option>
+                                    <option value="Performance cars">Performance cars</option>
+                                    <option value="Modified cars">Modified cars</option>
+                                    <option value="Luxury cars">Luxury cars</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <!-- no error_msg div class since field is optional -->
+                        </div> 
+                        <!-- applying similar format to previous optional field -->
+                        <div class="form_input_container" id="form_input_prefer_container_optional">
+                            <div class="form_input content_text">
+                                <label for="task_method_prefer">Did you get any new information about the cars? (optiona2)</label>
+                                <select name="Prefered task completion method" id="task_method_prefer" size="1">
+                                    <option value="Not-selected">--Please Select--</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form_input_container">
+                            <div class="form_input content_text">
+                                <label for="reason" >What should be included in this website in the future?</label>
+                                <input type="text" id="reason" size="45" name="Enter Your opinion" placeholder="Enter Your opinion ">
+                            </div>
+                            <div class="error_msg"></div>
+                        </div> 
+                        
+                        <!--creating submit button for form  -->
+                        <button class="submit_btn" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+                <!-- creating the 'thank you' screen within div and applying invisible class which contains display: none; as an attribute to keep screen hidden till valid submission -->
+                <div id="thank_you" class="thank_you invisible">
+                    <div class="thank_you_text">
+                        <h1 class="main_topic">THANK YOU FOR YOUR FEEDBACK</h1>
+                        <p class="main_topic">Thank you for taking the time to give us your feedback on your experience .</p>
+                        <!-- creating a back to form button that toggles the invisible and visible classes of thanK you screen and form -->
+                        <button onclick="back_to_form()" class="back2form_btn">BACK TO FORM</button>
+                    </div>
+                </div>
+                
+            <!-- importing java script files -->
+            <script src="../Top_up_button.js"></script>
+            <script src="./comments.js"></script>
+            
+            <!-- footer -->
+            <footer class="footer">
+                <p>&copy; 2023 carzilla. &nbsp All rights reserved.</p>
+                <p> &nbsp  &nbsp Contact: Carzilla@gmail.com</p>
+                <a href="../Page_Editor/Page_Editor_(Bhashitha).html">
+                <button class="developer-button">Developer</button></a>
+            </footer>
+                
+
+    </body>
+</html>

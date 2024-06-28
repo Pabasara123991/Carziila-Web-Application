@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CARZILLA</title>
+            <!-- linking the css files  -->
+            <link rel="stylesheet" href="../student2.css">
+            <link rel="stylesheet" href="./Main_Page.css">
+            <link rel="stylesheet" href="../common.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- navigation bar -->
+    <!-- Start of the navigation bar -->
+    <div id="navi_bar">
+        <div class="logo">
+                <a href="../Main_Page/Main_Page.html">
+                    <img src="../Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="selected_btn active"><a href="../../Student_2/Main_Page/Main_Page.html">HOME</a></div>
+            <div class="selected_btn"><a href="../../Student_4/Gallery/Gallery.html">GALLERY</a></div>
+            <div class="selected_btn"><a href="../../Student_3/quiz/quiz.html">QUIZ</a></div>
+            <div class="selected_btn"><a href="../../Student_1/Buy-products/BuyProducts.html">SHOP</a></div>
+            <div class="selected_btn"><a href="../../Student_2/Comments_Page/Comments.html">COMMENTS</a></div>
+            <div class="selected_btn"><a href="../../Student_4/Sitemap/Sitemap.html">SITEMAP</a></div>
+            <div class="selected_btn"><a href="../../Student_3/about_us/detail.html">ABOUT US</a></div>
+        </div>
+        <!-- End of the navigation bar -->
+        
+        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+        
+        
+        
+            <!-- creating welcome screen within div-->
+                <div id="top" class="welcome_screen">
+                    <div class="welcome_screen_text main_topic">
+                        <h1 class="animation_h1">CARZILLA</h1>
+                        <h3 class="animation_h2">Welcome to Carzilla - Your Ultimate Source for Car Details and Information! ...</h3>
+                    </div>
+                </div>
+                
+            <!-- creating quotes within div -->
+                <div class="quote1">
+                    <!-- using seperate div for text and image for easier handling -->
+                    <div class="quote1_img">
+                        <img id="MF_img" src="./Images/MP_MF.png" alt="MF">
+                    </div>
+                    <div class="quote1_text">
+                        <h1 class="quote_text">"Cars are part of our genetic makeup. It's unavoidable." </h1>
+                        <h3 class="content_text">-Matthew Fox-</h3>
+                    </div>
+                </div>
+
+        
+
+            <!-- creating a window with topics of the content under explore and linked to sub topics(content) -->
+                <div class="explore">
+                    <div class="topic sub_topic">
+                        <h1>EXPLORE</h1>
+                    </div>
+                    <div class="content_container">
+                        <!-- separate icons for each sub-topic -->
+                        <div id="classic_content" class="content" >
+                            <a href="../../Student_4/Contentpage/classic_cars.html">
+                            <h1>Classic Cars</h1></a>
+                        </div>
+                        <div id="electric_content" class="content">
+                            <a href="../../Student_1/Extra_Content_page/electric_hybrid.html">
+                            <h1>Electric and Hybrid Cars</h1></a>
+                        </div>
+                        <div id="luxury_content" class="content">
+                            <a href="../../Student_3/content_page/luxury_Sedans_Cars.html">
+                            <h1>Luxury Sedan Cars</h1></a>
+                        </div>
+                        <div id="future_content" class="content" >
+                            <a href="../Future_Automotive_Technology/Future_and_Automotive_Technology.html">
+                            <h1>Future and Automotive Technology</h1></a>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- creating quotes within div -->
+                <div class="quote2">
+                    <!-- using seperate div for text and image for easier handling -->
+                    <div class="quote2_text">
+                        <h1 class="quote_text">"The car has become the carapace, the protective and aggressive shell, of urban and suburban man.".</h1>
+                        <h3 class="content_text">-Marshall McLuhan-</h3>
+                    </div>
+                    <div class="quote2_img">
+                        <img id="MM_img" src="./Images/MP_MM.png" alt="MM">
+                    </div>
+                </div>
+            
+            <!-- creating an introduction to gallery within a div -->
+                <div class="gallery">
+                    <div class="topic sub_topic">
+                        <h1>GALLERY</h1>
+                    </div>
+                    <div class="gallery_content content_text">
+                        <h1>A Gallery Of Cars</h1>
+                        <h2>Find Out Cars Behind Your Favourites</h2>
+                        <button id="gallery_btn" onclick="window.location.href='../../Student_4/Gallery/Gallery.html'">Go To Gallery &#9655;</button>
+                    </div>
+                </div>
+                
+            <!-- creating quotes within div -->
+                <div class="quote3">
+                    <!-- using seperate div for text and image for easier handling -->
+                    <div class="quote3_img">
+                        <img id="RH_img" src="./Images/MP_RH.png" alt="RH">
+                    </div>
+                    <div class="quote3_text">
+                        <h1 class="quote_text">"Cars are changing and so is the way we communicate about them." </h1>
+                        <h3 class="content_text">-Richard Hammond-</h3>
+                    </div>
+                </div>
+            
+            <!-- creating an introduction to the quiz with a link to quiz page -->
+                <div class="quiz">
+                    <div class="topic sub_topic">
+                        <h1>QUIZ</h1>
+                    </div>
+                    <div class="quiz_content content_text">
+                        <h1>How Good Is Your Knowledge On Cars?</h1>
+                        <h2>Try Now To Find Out</h2>
+                        <button id="quiz_btn" onclick="window.location.href='../../Student_3/quiz/quiz.html'">Go To Quiz &#9655;</button>
+                    </div>
+                </div>
+                
+            <!-- creating quotes within div -->
+                <div class="quote4">
+                    <!-- using seperate div for text and image for easier handling -->
+                    <div class="quote4_img">
+                        <img id="MPG_img" src="./Images/MP_MPG.png" alt="MPG">
+                    </div>
+                    <div class="quote4_text">
+                        <h1 class="quote_text">"But my passion is racing cars. It's what I like to do in my off time." </h1>
+                        <h3 class="content_text">-Mark-Paul Gosselaar-</h3>
+                    </div>
+                </div>
+            
+            <!-- reating an introduction to the shop witha link to shop page -->
+                <div class="shop">
+                    <div class="topic sub_topic">
+                        <h1>SHOP</h1>
+                    </div>
+                    <div class="shop_content content_text">
+                        <h1>What are the Latest parts?</h1>
+                        <h2>Visit Our Shop To Find Out</h2>
+                        <button id="shop_btn" onclick="window.location.href='../../Student_1/Buy-products/BuyProducts.html'">Go To Shop &#9655;</button>
+                    </div>
+                </div>
+
+        </div>
+        
+        <!-- importing java script related to Top up button -->
+            <script src="../Top_up_button.js"></script>
+            
+            <footer class="footer">
+                <div class="container">
+                    <div class="main_links">
+                        <div class="footer_div">
+                            <a>CONTACT US</a>
+                            <ul class="contact_us_links">
+                                <li><a>+94123456789</a></li>
+                                <li><a>carzilla@gmail.com</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer_div pages_link"> <!-- Added a class "pages_link" to the "PAGES" main link -->
+                            <a>PAGES</a>
+                            <ul class="page_links">
+                                <li><a href="../Main_Page/Main_Page.html">Home</a></li>
+                                <li><a href="../../Student_4/Gallery/Gallery.html">Gallery</a></li>
+                                <li><a href="../../Student_3/quiz/quiz.html">Quiz</a></li>
+                                <li><a href="../../Student_1/Buy-products/BuyProducts.html">Shop</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer_div">
+                            <br>
+                            <ul class="page_links">
+                                <li><a href="../../Student_2/Comments_Page/Comments.html">Comments</a></li>
+                                <li><a href="../../Student_4/Sitemap/Sitemap.html">Sitemap</a></li>
+                                <li><a href="../../Student_3/about_us/detail.html">About Us</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer_div">
+                            <a>ADDITIONAL PAGES</a>
+                            <ul class="additional_links">
+                                <li><a href="../../Student_4/Contentpage/classic_cars.html">Classic Cars</a></li>
+                                <li><a href="../../Student_1/Extra_Content_page/electric_hybrid.html">Electric and Hybrid Cars</a></li>
+                                <li><a href="../../Student_3/content_page/luxury_Sedans_Cars.html">Luxury Sedan Cars</a></li>
+                                <li><a href="../Future_Automotive_Technology/Future_and_Automotive_Technology.html">Future and Automotive Cars</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer_div">
+                            <a>PAGE EDITORS</a>
+                            <ul class="page_editor_links">
+                                <li><a href="../../Student_1/page_editor/pageeditor(student1).html">Student 1</a></li>
+                                <li><a href="../Page_Editor/Page_Editor_(Bhashitha).html">Student 2</a></li>
+                                <li><a href="../../Student_3/Page_Editor/PageEditor.html">Student 3</a></li>
+                                <li><a href="../../Student_4/PageEditor/PageEditor.html">Student 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_div">
+                            
+                            <div class="social_icons">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-google"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

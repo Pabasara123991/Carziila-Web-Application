@@ -1,0 +1,58 @@
+body{
+    margin-top: 60PX;
+    margin-bottom:20PX
+}
+h1 {
+    text-align: center;
+    font-style:italic;
+    font-size: 700%;
+}
+
+#first-box, #third-box{
+    font-size: 20px;
+    padding:40px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(177, 177, 177); 
+}
+
+.first-box-flex, .third-box-flex{
+    width: 45%;    
+}
+
+#description-1 h2, #description-2 h2, #description-3 h2, #description-4 h2 {
+    text-align: center;
+    color: black;
+    font-size: 190%;
+}
+
+#description-1 p, #description-2 p, #description-3 p, #description-4 p{
+    font-size: 120%;
+}
+
+#image-1 img, #image-3 img{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 10px;
+    height: auto;       
+}
+
+#second-box, #forth-box{
+    font-size: 20px;
+    padding:30px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;   
+}
+
+.second-box-flex, .forth-box-flex {
+    width: 48%; 
+}
+
+#image-2 img, #image-4 img{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+

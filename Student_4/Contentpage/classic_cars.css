@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+h1 {
+    text-align: center;
+    font-style:italic;
+    font-size: 700%;
+    padding-top: 80px;
+}
+
+/* CSS for the .subbar button */
+.fa {
+    font-family: 'Font Awesome 6 Free';
+    background-color: #9fa6a4; 
+    color: #ffffff; 
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}  
+   
+.subbar {
+    position: fixed;
+    top: 80px; 
+    left: 20px; 
+}
+  
+.button-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.button-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.button-content a:hover {
+    background-color: #ddd;
+}
+  
+.subbar:hover .button-content {
+    display: block;
+}
+  
+.subbar:hover .button {
+    background-color: #696767;
+}
+
+/*css for the images and their descriptions*/
+#first-box, #third-box, #fifth-box{
+    padding:40px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(177, 177, 177); 
+}
+
+.first-box-flex, .third-box-flex, .fifth-box-flex{
+    width: 45%;    
+}
+
+#description-1 h2, #description-2 h2, #description-3 h2, #description-4 h2, #description-5 h2 {
+    text-align: center;
+    color: black;
+    font-size: 190%;
+    padding-top: 40px;
+}
+
+#description-1 p, #description-2 p, #description-3 p, #description-4 p, #description-5 p{
+    font-size: 120%;
+    padding-top: 20px;
+}
+
+#image-1 img, #image-3 img, #image-5 img{
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 10px;
+    height: auto;
+    
+}
+
+#second-box, #forth-box{
+    padding:30px 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;   
+}
+
+.second-box-flex, .forth-box-flex {
+    width: 48%; 
+}
+
+#image-2 img, #image-4 img{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform:scaleX(-1);
+}      
+
+
+
+

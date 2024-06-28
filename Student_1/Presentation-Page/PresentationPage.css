@@ -1,0 +1,22 @@
+*{
+    font-family:'Times New Roman', Times, serif ;
+    margin: 0;
+    padding: 0;
+}
+.splash{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    color: white;
+    padding-bottom: 30px;
+    padding-right: 200px;
+    font-weight: bold;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height:100%;
+}

@@ -1,0 +1,367 @@
+/* css for welcome screen */
+.welcome_screen{
+    background-image: url(./Images/carzz.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.welcome_screen_text h1{
+    font-size: 40vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
+}
+.welcome_screen_text h3{
+    font-size: 5vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* css for quotes */
+.quote1, .quote2, .quote3, .quote4{
+    display: grid;
+    padding: 15px 40px 15px 40px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/04/black-wood.png);
+    color: aliceblue;
+    font-size: x-large;
+}
+.quote1 h1, .quote2 h1, .quote3 h1, .quote4 h1{
+    position: relative;
+    z-index: 0;
+}
+.quote1_text, .quote2_text, .quote3_text, .quote4_text{
+    padding-top: 10px;
+}
+.quote1, .quote3{
+    text-align: right;
+    font-size: 50px;
+    grid-template-columns: 40% 60%;
+}
+.quote2, .quote4{
+    text-align: left;
+    font-size: 40px;
+    grid-template-columns: 60% 40%;
+}
+.quote1 h3, .quote3 h3{
+    text-align: right;
+    margin-right: 40px;
+    font-size: 30px;
+}
+.quote2 h3, .quote4 h3{
+    text-align: left;
+    margin-left: 40px;
+    font-size: 30px;
+}
+#MF_img, #RH_img, #MM_img, #MPG_img{
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+}
+#RH_img{
+    transform: translate(0, 20vh);
+	width: 20vw;
+}
+#MF_img{
+    transform: translate(0, 20vh);
+	width: 20vw;
+}
+#MM_img{
+    transform: translate(0vh, 0);
+    width: 30vw;
+}
+#MPG_img{
+    transform: translate(0, 20vh);
+	width: 25vw;
+}
+
+/* css for explore */
+.explore{
+    background-image: url(./Images/explore_background.jpg);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+.topic{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.topic h1{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: white;
+    font-weight: bold;
+}
+.content_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.content{
+    margin: 35px 15px 35px 15px;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 5%;
+    transition: 0.3S;
+}
+.content:hover{
+    transform: translate(-5px,-5px);
+    box-shadow: 5px 5px 5px black;
+}
+.content:active{
+    transform: none;
+    box-shadow: none;
+}
+#classic_content, #electric_content, #luxury_content, #future_content{
+    background-color: rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-size: cover;
+}
+#classic_content h1,#electric_content h1,#luxury_content h1,#future_content h1{
+    display: inline-block;
+    padding-bottom: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#classic_content{
+    background-image: url(./Images/Classic_cars.jpg);
+
+}
+#electric_content{
+    background-image: url(./Images/Explore_Ev_hybrid.jpg);
+}
+#luxury_content{
+    background-image: url(./Images/super_luxury.jpg);
+}
+#future_content{
+    background-image: url(./Images/Explore_Future.jpg);
+}
+
+#classic_content a{
+    text-decoration: none;
+    color: rgb(255, 251, 0); 
+}
+
+#electric_content a{
+    text-decoration: none;
+    color: rgb(57, 84, 123);
+
+}
+
+#luxury_content a{
+    text-decoration: none;
+    color: rgb(200, 82, 255);
+}
+
+#future_content a{
+    text-decoration: none;
+    color: rgb(203, 205, 208);
+}
+
+
+
+
+
+
+
+/* css for gallery in main page */
+.gallery{
+    background-image: url(./Images/Gallery_MP.jpg);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 10vh auto;
+}
+.gallery_content h1{
+    margin-top: 60px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 7vw;
+    font-weight: bolder;
+}
+.gallery_content h2{
+    color: rgb(219, 236, 255);
+    background-color: transparent;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+/* css for shop ad */
+.shop{
+    background-image: url(./Images/Shop_MP.jpg);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+.shop_content h1{
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 5vw;
+    font-weight: bolder;
+}
+.shop_content h2{
+    color: rgb(219, 236, 255);
+    background-color: transparent;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+/* css for quiz ad */
+.quiz{
+    background-image: url(./Images/Quiz_MP.jpg);
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+}
+.quiz_content, .shop_content{
+    text-align: center;
+    padding: auto;
+}
+.quiz_content h1{
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.402);
+    font-size: 5vw;
+    font-weight: bolder;
+}
+.quiz_content h2{
+    color: rgb(219, 236, 255);
+    background-color: rgba(0, 0, 0, 0.489);
+    font-size: 2vw;
+    font-weight: bolder;
+}
+/* css for buttonss */
+#quiz_btn, #shop_btn, #gallery_btn{
+    padding: 10px 40px 10px 40px;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    font-size: larger;
+    background-color: rgb(70, 1, 81);
+    color: rgb(241, 225, 255);
+    transition: 0.3s;
+}
+#quiz_btn, #shop_btn{
+    margin-top: 5vw;
+}
+#gallery_btn{
+    margin-top: 2vw;
+}
+#quiz_btn:hover , #shop_btn:hover, #gallery_btn:hover{
+    background-color: rgb(54, 3, 62);
+    color: rgb(162, 85, 230);
+    transform: translate(-3px,-3px);
+    box-shadow: 3px 3px 3px black;
+}
+#quiz_btn:active , #shop_btn:active, #gallery_btn:active{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+}
+
+
+/* CSS for the Footer */
+
+.pages_link .page_links {
+    display: block;
+}
+
+
+.footer {
+    background-color: #0d0d0d;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_div {
+    flex-basis: 23%;
+}
+
+
+.footer_div > a {
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer_div > a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: white;
+    font-size: 16px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 75%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
